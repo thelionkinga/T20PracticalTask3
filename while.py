@@ -3,16 +3,16 @@ total = 0
 
 # Continue looping until the user enters -1 or non-numeric input
 while True:
-    try:
-        # Request user to enter a number
-        number_input = input("Please enter a number (type -1 to stop): ")
+    # Request user to enter a number
+    number_input = input("Please enter a number (type -1 to stop): ")
 
+    # Check if the entered number is -1 to exit the loop
+    if number_input == "-1":
+        break
+
+    try:
         # Convert user input to an integer
         number = int(number_input)
-
-        # Check if the entered number is -1 to exit the loop
-        if number == -1:
-            break
 
         # Add the entered number to the total sum
         total += number
